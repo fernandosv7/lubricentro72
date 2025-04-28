@@ -171,8 +171,8 @@ export default function Landing() {
   return (
     <>
       <Head>
-        <title>Lubricentro 72</title>
-        <meta name="description" content="Cambio de aceite y service general en La Plata" />
+        <title>Lubricentro 72 - Cambio de aceite en La Plata</title>
+        <meta name="description" content="Service completo para tu auto: cambio de aceite y filtros en La Plata desde 1984." />
       </Head>
 
       <Header />
