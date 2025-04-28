@@ -1,0 +1,16 @@
+/* 1) Importa las fuentes si quieres */
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;700&family=DM+Sans:wght@400;700&display=swap');
+
+/* 2) Importa Tailwind en bloque */
+@import "tailwindcss";
+
+/* 3) Tus estilos */
+body {
+  font-family: 'DM Sans', sans-serif;
+  @apply antialiased;
+  @apply bg-gray-50;
+  
+}
+
+
+
