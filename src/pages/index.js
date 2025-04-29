@@ -46,12 +46,12 @@ function Header() {
   }, [isMobile]);
 
   const bgImage = (isMobile ? mobileGallery : desktopGallery)[index];
-  const heroHeight = isMobile ? "h-[1000px]" : "h-[800px]";
+  const heroHeight = isMobile ? "h-[800px]" : "h-[800px]";
 
   return (
     <header
       className={`relative flex flex-col
-              items-center md:items-start       /* <-- centro en móvil, izquierda en desktop */
+              items-center md:items-start
               justify-center text-white
               overflow-hidden w-full ${heroHeight}`}
       style={{
@@ -131,13 +131,15 @@ function Header() {
 
       {/* Texto principal */}
       <div
-        className="relative z-20 mt-28 md:mt-0
-             px-6 max-w-xl
-             text-center md:text-left        
-             md:pl-20"
+        className="relative z-20 
+             flex flex-col justify-center md:justify-center 
+             h-full 
+             px-6
+             text-center md:text-left
+             pt-20 md:pt-0 md:pl-20"
       >
         <h1 className="font-cal text-5xl md:text-6xl leading-tight mb-6">
-          ¿Necesitás
+          ¿Tu auto necesita
           <br />
           un service?
         </h1>
@@ -148,12 +150,12 @@ function Header() {
           href={`https://wa.me/${whatsappNumber}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-primary text-black font-cal font-semibold rounded-xl overflow-hidden hover:brightness-110 transition shadow-xl shadow-white/20"
-        >
-          <span className="px-8 py-3">Hablar por WhatsApp</span>
-          <span className="w-px h-8 bg-black/50" aria-hidden="true" />
-          <span className="flex items-center justify-center px-5 h-full">
-            <FaWhatsapp className="w-6 h-6 text-green-600" />
+          className="inline-flex items-center bg-primary mx-auto md:mr-auto md:ml-0 text-black font-cal font-semibold rounded-xl overflow-hidden hover:brightness-110 transition shadow-xl shadow-white/20"
+        > {/* botón WhatsApp */}
+          <span className="px-8 py-3">Hablar por WhatsApp</span> {/* texto botón */}
+          <span className="w-px h-8 bg-black/50" aria-hidden="true" /> {/* separador */}
+          <span className="flex items-center justify-center px-5 h-full"> {/*loguito wsp*/}
+            <FaWhatsapp className="w-7 h-7 text-green-600" />
           </span>
         </a>
       </div>
