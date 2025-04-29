@@ -1,16 +1,14 @@
-/* 1) Importa las fuentes si quieres */
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;700&family=DM+Sans:wght@400;700&display=swap');
+/* 1) Tus Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
-/* 2) Importa Tailwind en bloque */
-@import "tailwindcss";
+/* 2) Directivas obligatorias de Tailwind v3 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* 3) Tus estilos */
+/* 3) Tus estilos personalizados */
 body {
-  font-family: 'DM Sans', sans-serif;
-  @apply antialiased;
-  @apply bg-gray-50;
-  
+  font-family: "DM Sans", sans-serif;
+  background: #f9fafb;       /* equivalente a bg-gray-50 */
+  -webkit-font-smoothing: antialiased;
 }
-
-
-
